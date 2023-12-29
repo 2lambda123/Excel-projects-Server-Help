@@ -18,9 +18,9 @@ Option Explicit On
  Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
 Partial Friend NotInheritable Class MySettings
     Inherits Global.System.Configuration.ApplicationSettingsBase
-    
+
     Private Shared defaultInstance As MySettings = CType(Global.System.Configuration.ApplicationSettingsBase.Synchronized(New MySettings()),MySettings)
-    
+
 #Region "My.Settings Auto-Save Functionality"
 #If _MyType = "WindowsForms" Then
     Private Shared addedHandler As Boolean
@@ -35,10 +35,10 @@ Partial Friend NotInheritable Class MySettings
     End Sub
 #End If
 #End Region
-    
+
     Public Shared ReadOnly Property [Default]() As MySettings
         Get
-            
+
 #If _MyType = "WindowsForms" Then
                If Not addedHandler Then
                     SyncLock addedHandlerLockObject
@@ -52,7 +52,7 @@ Partial Friend NotInheritable Class MySettings
             Return defaultInstance
         End Get
     End Property
-    
+
     <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("Anthony Duguid")>  _
@@ -61,7 +61,7 @@ Partial Friend NotInheritable Class MySettings
             Return CType(Me("App_Author"),String)
         End Get
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("https://github.com/Excel-projects/Server-Help/blob/master/README.md")>  _
@@ -73,7 +73,7 @@ Partial Friend NotInheritable Class MySettings
             Me("App_PathReadMe") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("dNSHostname")>  _
@@ -85,7 +85,7 @@ Partial Friend NotInheritable Class MySettings
             Me("Ping_ServerName") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("Results")>  _
@@ -97,7 +97,7 @@ Partial Friend NotInheritable Class MySettings
             Me("Ping_Results") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("dNSHostname")>  _
@@ -109,7 +109,7 @@ Partial Friend NotInheritable Class MySettings
             Me("Rdg_ServerName") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("CN")>  _
@@ -121,7 +121,7 @@ Partial Friend NotInheritable Class MySettings
             Me("Rdg_Description") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("C:\Temp\Test.rdg")>  _
@@ -133,7 +133,7 @@ Partial Friend NotInheritable Class MySettings
             Me("Rdg_FileName") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("https://github.com/Excel-projects/Server-Help/issues/new")>  _
@@ -145,7 +145,7 @@ Partial Friend NotInheritable Class MySettings
             Me("App_PathNewIssue") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("11/02/2018 12:00:00")>  _
@@ -157,7 +157,7 @@ Partial Friend NotInheritable Class MySettings
             Me("App_ReleaseDate") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("OperatingSystem")>  _
@@ -169,7 +169,7 @@ Partial Friend NotInheritable Class MySettings
             Me("Rdg_Comment") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("LDAP://OU=Servers,...")>  _
@@ -181,11 +181,11 @@ Partial Friend NotInheritable Class MySettings
             Me("Rdg_LdapPath") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("SELECT whenCreated, whenChanged, distinguishedName, OperatingSystem, OperatingSys"& _ 
-        "temVersion, dNSHostname, Name, CN FROM '[Rdg.LdapPath]' WHERE objectClass = 'com"& _ 
+     Global.System.Configuration.DefaultSettingValueAttribute("SELECT whenCreated, whenChanged, distinguishedName, OperatingSystem, OperatingSys"& _
+        "temVersion, dNSHostname, Name, CN FROM '[Rdg.LdapPath]' WHERE objectClass = 'com"& _
         "puter'")>  _
     Public Property Rdg_LdapQry() As String
         Get
@@ -195,7 +195,7 @@ Partial Friend NotInheritable Class MySettings
             Me("Rdg_LdapQry") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("ServerType")>  _
@@ -207,7 +207,7 @@ Partial Friend NotInheritable Class MySettings
             Me("Rdg_ServerGroup") = value
         End Set
     End Property
-    
+
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Configuration.DefaultSettingValueAttribute("Servers")>  _
@@ -222,12 +222,12 @@ Partial Friend NotInheritable Class MySettings
 End Class
 
 Namespace My
-    
+
     <Global.Microsoft.VisualBasic.HideModuleNameAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
     Friend Module MySettingsProperty
-        
+
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
         Friend ReadOnly Property Settings() As Global.ServerActions.MySettings
             Get

@@ -140,26 +140,26 @@
 							supertip="This is the file path for the Remote Desktop Manager file."
 							/>
 				</group>
-				<group 
-						label="Options" 
+				<group
+						label="Options"
 						id="grpOptions"
 						imageMso="PropertySheet"
 						>
-					<button 
-							id="btnRefreshServerList" 
-							label="Rebuild Server List" 
-							size="large" 
-							onAction="OnAction" 
-							imageMso="GetExternalDataFromOtherSources" 
+					<button
+							id="btnRefreshServerList"
+							label="Rebuild Server List"
+							size="large"
+							onAction="OnAction"
+							imageMso="GetExternalDataFromOtherSources"
 							screentip="Rebuild Server List"
 							supertip="This will recreate the list of servers from Active Directory using a LDAP query."
 							/>
-					<button 
-							id="btnRefreshCombobox" 
-							label="Refresh Dropdowns" 
-							size="large" 
-							onAction="OnAction" 
-							imageMso="RefreshAll" 
+					<button
+							id="btnRefreshCombobox"
+							label="Refresh Dropdowns"
+							size="large"
+							onAction="OnAction"
+							imageMso="RefreshAll"
 							screentip="Refresh Dropdowns"
 							supertip="This will refresh all of the dropdowns in the ribbon with the active table column names."
 							/>
