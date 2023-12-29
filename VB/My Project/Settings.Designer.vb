@@ -64,7 +64,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("https://github.com/aduguid/ServerActions/blob/master/README.md")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("https://github.com/Excel-projects/Server-Help/blob/master/README.md")>  _
     Public Property App_PathReadMe() As String
         Get
             Return CType(Me("App_PathReadMe"),String)
@@ -136,7 +136,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("https://github.com/aduguid/ServerActions/issues/new")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("https://github.com/Excel-projects/Server-Help/issues/new")>  _
     Public Property App_PathNewIssue() As String
         Get
             Return CType(Me("App_PathNewIssue"),String)
@@ -148,7 +148,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("07/31/2017 12:00:00")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("11/02/2018 12:00:00")>  _
     Public Property App_ReleaseDate() As Date
         Get
             Return CType(Me("App_ReleaseDate"),Date)
@@ -172,7 +172,7 @@ Partial Friend NotInheritable Class MySettings
     
     <Global.System.Configuration.UserScopedSettingAttribute(),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-     Global.System.Configuration.DefaultSettingValueAttribute("LDAP://OU=Servers,OU=FT,DC=federationtraining,DC=edu,DC=au")>  _
+     Global.System.Configuration.DefaultSettingValueAttribute("LDAP://OU=Servers,...")>  _
     Public Property Rdg_LdapPath() As String
         Get
             Return CType(Me("Rdg_LdapPath"),String)

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ServerActions", "ServerActions.vbproj", "{925B6443-C5D3-4E3C-A454-50B7C20F9364}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ServerHelp", "ServerHelp.vbproj", "{925B6443-C5D3-4E3C-A454-50B7C20F9364}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

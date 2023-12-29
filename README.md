@@ -2,25 +2,20 @@
 <head>
 </head>
 
-<img align="left" src="Images/ReadMe/App.png" width="64px" >
+<img align="left" src="Images/ReadMe/header.png">
 
-# Server Actions  <span class="Application_Version">2.0.0.0</span> 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © 2017 Anthony Duguid")
-![current_build Office_2013](https://img.shields.io/badge/current_build-Office_2013-red.svg)
-<!---
-[![download VBA](https://img.shields.io/badge/download-VBA-brightgreen.svg)](https://github.com/aduguid/ServerActions/raw/master/VBA/ServerActions.xlsm?raw=true "Download the VBA Add-In")
---->
-This is an Excel Add-In written in Microsoft Visual Studio Community 2017 C#/VB.NET and VBA. It allows the user to use an Excel table to ping a list of servers and create a file for Microsoft Remote Desktop Manager. This is used for quickly determining which servers are offline in a list. This has now been tested on Windows (7, 8.1, 10) & Excel (2010, 2013, 2016).
-<!---
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © 2017 Anthony Duguid")
-[![star this repo](http://githubbadges.com/star.svg?user=aduguid&repo=ServerActions&style=flat&color=fff&background=007ec6)](http://github.com/aduguid/ServerActions)
-[![fork this repo](http://githubbadges.com/fork.svg?user=aduguid&repo=ServerActions&style=flat&color=fff&background=007ec6)](http://github.com/aduguid/ServerActions/fork)
+This Add-In allows the user to ping a list of servers and creates a file for [Microsoft Remote Desktop Manager](https://www.microsoft.com/en-au/download/details.aspx?id=44989) from an Excel table. This is used for quickly determining which servers are offline in a list. It is written in 3 different versions as a VSTO Add-In in C# and VB.NET as well as a VBA Add-In.
 
-<br>
+<!--[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/AnthonyDuguid/1.00)-->
+[![Join the chat at https://gitter.im/ServerActions/Lobby](https://badges.gitter.im/ServerActions/Lobby.svg)](https://gitter.im/ServerActions/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE "MIT License Copyright © Anthony Duguid")
+[![Latest Release](https://img.shields.io/github/release/Excel-projects/Server-Help.svg?label=latest%20release)](https://github.com/Excel-projects/Server-Help/releases)
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/Excel-projects/Server-Help/latest.svg)](https://github.com/Excel-projects/Server-Help/commits/master)
+[![GitHub issues](https://img.shields.io/github/issues/Excel-projects/Server-Help.svg)](https://github.com/Excel-projects/Server-Help/issues)
+<!--[![Github All Releases](https://img.shields.io/github/downloads/Excel-projects/Server-Help/total.svg)](https://github.com/Excel-projects/Server-Help/releases)-->
 
---->
 <h1 align="center">
-  <img src="Images/ReadMe/ribbon.example.gif" alt="vbaping" />
+  <img src="Images/ReadMe/excel.ribbon.gif" />
 </h1>
 
 ## Table of Contents
@@ -67,17 +62,15 @@ Instructions for installation of VBA and VSTO versions.
 
 ### VBA
 How to install the VBA version
-1. Download the VBA Add-In file [![download VBA](https://img.shields.io/badge/download-VBA-brightgreen.svg)](https://github.com/aduguid/ServerActions/raw/master/VBA/ServerActions.xlam?raw=true "Download the VBA Add-In").
-2. Copy the file to the XLSTART ```%AppData%\Microsoft\Excel\XLSTART\``` folder on your computer.
+1. Download the VBA Add-In file [![download VBA](https://img.shields.io/badge/download-VBA-brightgreen.svg)](https://github.com/Excel-projects/Server-Help/raw/master/VBA/ServerHelp.xlam?raw=true "Download the VBA Add-In").
+2. Copy the file to the XLSTART folder on your computer. ```%AppData%\Microsoft\Excel\XLSTART\```
 3. Close all open instances of Excel and then launch Excel. The new ribbon should appear.
 
 ### VSTO
 How to install the VSTO version
-1. Download AnthonyDuguid.pfx And Install At Root Level [![download Key](https://img.shields.io/badge/download-Key-brightgreen.svg)](https://github.com/aduguid/ServerActions/VB/blob/master/AnthonyDuguid.pfx?raw=true "Download AnthonyDuguid.pfx And Install At Root Level For VSTO")
-2. Download and run the setup.exe file. ```TODO: publish .NET to GitHub```
-<!---
-[![download VSTO](https://img.shields.io/badge/download-VSTO-brightgreen.svg)](https://github.com/aduguid/ServerActions/VB/blob/master/publish/setup.exe?raw=true "Download Setup.exe Install File")
---->
+1. Download AnthonyDuguid.pfx And Install At Root Level [![download Key](https://img.shields.io/badge/download-Key-brightgreen.svg)](https://github.com/Excel-projects/Server-Help/blob/master/VB/AnthonyDuguid.pfx?raw=true "Download AnthonyDuguid.pfx And Install At Root Level For VSTO")
+2. Download and run the setup.exe file.
+[![download VSTO](https://img.shields.io/badge/download-VSTO-brightgreen.svg)](https://github.com/Excel-projects/Server-Help/blob/master/VB/publish/setup.exe?raw=true "Download Setup.exe Install File")
 
 <br>
 
@@ -85,8 +78,8 @@ How to install the VSTO version
 ## Dependencies
 |Software                        |Dependency                 |Project                    |
 |:-------------------------------|:--------------------------|:--------------------------|
-|[Microsoft Visual Studio Community 2017](https://www.visualstudio.com/vs/whatsnew/)|Solution|VSTO|
-|[Microsoft Office Developer Tools](https://blogs.msdn.microsoft.com/visualstudio/2015/11/23/latest-microsoft-office-developer-tools-for-visual-studio-2015/)|Solution|VSTO|
+|[Microsoft Visual Studio Community](https://www.visualstudio.com/vs/whatsnew/)|Solution|VSTO|
+|[Microsoft Office Developer Tools](https://visualstudio.microsoft.com/vs/features/office-tools/)|Solution|VSTO|
 |[Microsoft Excel 2010 (or later)](https://www.microsoft.com/en-au/software-download/office)|Project|VBA, VSTO|
 |[Visual Basic for Applications](https://msdn.microsoft.com/en-us/vba/vba-language-reference)|Code|VBA|
 |[Extensible Markup Language (XML)](https://www.rondebruin.nl/win/s2/win001.htm)|Ribbon|VBA, VSTO|
@@ -178,19 +171,9 @@ This Excel ribbon is inserted after the “Home” tab when Excel opens. Listed 
 ####	Refresh Dropdowns (Button)
 * Refreshes all the dropdown values from the active table column names.
 
-<a id="user-content-settings" class="anchor" href="#settings" aria-hidden="true"> </a>
-####	Add-In Settings (Button)
-* Opens the settings form
-
-<h1 align="left">
-  <img src="Images/ReadMe/settings2.0.png" alt="settings" />
-</h1>
-
 <a id="user-content-help" class="anchor" href="#help" aria-hidden="true"> </a>
 ###	Help (Group)
-<h1 align="left">
-  <img src="Images/ReadMe/ribbon.group.help.png" alt="help" />
-</h1>
+
 
 <a id="user-content-how-to" class="anchor" href="#how-to" aria-hidden="true"> </a>
 ####	How To... (Button)
@@ -200,9 +183,48 @@ This Excel ribbon is inserted after the “Home” tab when Excel opens. Listed 
 ####	Report Issue (Button)
 * Opens the new issue page in a browser
 
-<a id="user-content-new-version" class="anchor" href="#new-version" aria-hidden="true"> </a>
-####	New Version Is Available (Button)
-* This button is visible if the version of the Add-In is different from the one in the Read Me page. It will download a new version from the site when pressed.
+<a id="user-content-settings" class="anchor" href="#settings" aria-hidden="true"> </a>
+####	Add-In Settings (Button)
+* Opens the settings form/taskpane
+
+<kbd>
+VSTO
+<br>
+  <img align="left" src="Images/ReadMe/vsto.ribbon.settings.png" />
+</kbd>
+
+- Types of VSTO Settings
+  - Application Settings
+    - These settings can only be changed in the project and need to be redeployed
+    - They will appear disabled in the form
+  - User Settings
+    - These settings can be changed by the end-user
+    - They will appear enabled in the form
+    
+<kbd>
+VBA
+<br>
+  <img align="left" src="Images/ReadMe/vba.ribbon.settings.png" />
+</kbd>
+
+- VBA Settings
+  - To add a new setting
+    ```vbnet
+    ThisWorkbook.CustomDocumentProperties.Add _
+    Name:="App_ReleaseDate" _
+    , LinkToContent:=False _
+    , Type:=msoPropertyTypeDate _
+    , Value:="31-Jul-2017 1:05pm"
+    ```
+  - To update a setting
+    ```vbnet
+    ThisWorkbook.CustomDocumentProperties.Item("App_ReleaseDate").Value = "31-Jul-2017 1:05pm"
+    ```
+  - To delete a setting
+    ```vbnet
+    ThisWorkbook.CustomDocumentProperties.Item("App_ReleaseDate").Delete
+    ```
+    
 
 <a id="user-content-about" class="anchor" href="#about" aria-hidden="true"> </a>
 ###	About (Group)

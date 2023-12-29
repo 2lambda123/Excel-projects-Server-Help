@@ -192,3 +192,6 @@ ModelManifest.xml
 /.vs/slnx.sqlite
 /.vs
 /publish/Application Files/ScriptHelp_3_0_0_2/ApiHelp.shfbproj.deploy
+/VB/packages/log4net.2.0.8
+/CS/ServerActions/packages/log4net.2.0.8
+/CS/packages/log4net.2.0.8

@@ -1,4 +1,4 @@
-﻿'Option Strict On
+﻿Option Strict On
 Option Explicit On
 
 Imports System.Windows.Forms
@@ -74,8 +74,9 @@ Namespace TaskPane
 
         End Sub
 
-        Private Sub pgdSettings_PropertyValueChanged(s As Object, e As PropertyValueChangedEventArgs)
+        Private Sub pgdSettings_PropertyValueChanged(s As Object, e As PropertyValueChangedEventArgs) Handles pgdSettings.PropertyValueChanged
             Try
+                My.Settings.Save()
                 Scripts.Ribbon.InvalidateRibbon()
 
             Catch ex As Exception

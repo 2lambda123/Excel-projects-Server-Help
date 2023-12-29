@@ -3,9 +3,9 @@
 REM
 REM	|--------------------------------------------------------------------------------------------------------------------
 REM	| Purpose:			Generic Install
-REM	|
-REM	| Ver.	Date			Author			Details
-REM	| 1.00	27-NOV-2017		Anthony Duguid		Initial version.
+
+
+
 REM	|--------------------------------------------------------------------------------------------------------------------*/
 
 
@@ -20,4 +20,4 @@ REM 	/Y 	 = Suppresses prompting to confirm you want to overwrite an existing de
 REM
 
 REM	Copy the install directory and sub-directories
-	XCOPY ".\ServerActions.xlam" "%AppData%\Microsoft\AddIns\ServerActions.xlam" /E /K /Q /R /Y /D
+	XCOPY ".\ServerHelp.xlam" "%AppData%\Microsoft\AddIns\ServerHelp.xlam" /E /K /Q /R /Y /D
